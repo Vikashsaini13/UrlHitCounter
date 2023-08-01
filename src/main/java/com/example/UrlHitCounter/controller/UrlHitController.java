@@ -13,7 +13,7 @@ public class UrlHitController {
     private UrlHitService urlHitService;
     // this is my fist project  of springboot
 
-    @GetMapping("count")
+    @GetMapping("count") //to get the hitcount
     public int getHitCount(){
         urlHitService.urlHitCountIncrement();
         return urlHitService.getHitCount();
