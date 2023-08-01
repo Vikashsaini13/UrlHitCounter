@@ -14,7 +14,11 @@ public class UrlHitController {
     // this is my fist project  of springBoot
 
 
+<<<<<<< HEAD
     @GetMapping
+=======
+    @GetMapping("count") //to get the hitcount
+>>>>>>> 2486549bdcc36fa109fd349e71742de790d78920
     public int getHitCount(){
         urlHitService.urlHitCountIncrement();
         return urlHitService.getHitCount();
